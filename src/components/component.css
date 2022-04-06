@@ -78,4 +78,41 @@ h1 {
   background: white;
   border-radius: 4px;
 }
+
+.GridView__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.GridView__main .GridView__Contents {
+  width: 25%;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.GridView__main .GridView__title {
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+
+.GridView__main .GridView__body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
 /*# sourceMappingURL=component.css.map */
