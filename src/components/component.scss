@@ -1,65 +1,132 @@
 $navbackground: orange;
+$fontFamily:Verdana,
+Geneva,
+Tahoma,
+sans-serif;
 
-body{
+body {
     margin: 0;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+
 /* Navbar Component */
-.navbar-main{
+.navbar-main {
     display: flex;
     justify-content: space-between;
     background-color: $navbackground;
     padding-top: 10px;
     border-radius: 2px;
 }
-.navbar-main__contents{
+
+.navbar-main__contents {
     display: flex;
     justify-content: space-around;
 
-   align-self: baseline;
+    align-self: baseline;
 }
-h1{
+
+h1 {
     padding: 0px;
     margin-left: 5px;
     align-self: baseline;
     color: white;
 }
-.navbar-main__contents-tilte{
+
+.navbar-main__contents-tilte {
     padding: 20px;
 }
 
 // Searchbar Component
-.tableSearch-main{
+.tableSearch {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-  
+
 }
-.tableSearch-main__title{
-    h2{
-        margin:0px;
+
+.tableSearch__title {
+    h2 {
+        margin: 0px;
         padding: 0px;
         align-self: baseline;
-        
-        
+
+
     }
 }
-.tableSearch-main__searchbar{
+
+.tableSearch__searchbar {
     display: flex;
     width: 30%;
-    input{
-     width: 100%;
-     height:30px;
-     border-radius: 4px;
-     border: 1px solid #696e79;
-     background: white;
+
+    input {
+        width: 100%;
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid #696e79;
+        background: white;
     }
-    button{
+
+    button {
         border: 1px solid #696e79;
         background: white;
         border-radius: 4px;
+        height:55px
+        
     }
 
+
+}
+.tableSearch-icon{
+    padding-top: 10px;
+    height: 30px;
+    width:30px;
+    
+}
+.dropzone{
+    border: 1px dotted #696e79;
+    list-style: none;
+    cursor: pointer;
+    .dropzone__container{
+       font-family: $fontFamily;
+    }
+   .dropzone__container:hover {
+      color: red;
+    }
+   
+}
+.dropzone:hover{
+    border: 2px solid blue;
+}
+
+
+//Grid View
+.gridView__main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .gridView__Contents {
+        width: 25%;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+
+    }
+
+    .gridView__title {
+        font-weight: 700;
+        font-family: $fontFamily;
+        text-transform: capitalize;
+    }
+
+    .gridView__body {
+        font-family: $fontFamily;
+        text-transform: capitalize;
+        padding-top: 20px;
+    }
 }

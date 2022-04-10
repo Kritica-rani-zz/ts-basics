@@ -41,7 +41,7 @@ h1 {
   padding: 20px;
 }
 
-.tableSearch-main {
+.tableSearch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,31 +51,93 @@ h1 {
   padding: 20px;
 }
 
-.tableSearch-main__title h2 {
+.tableSearch__title h2 {
   margin: 0px;
   padding: 0px;
   -ms-flex-item-align: baseline;
       align-self: baseline;
 }
 
-.tableSearch-main__searchbar {
+.tableSearch__searchbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 30%;
 }
 
-.tableSearch-main__searchbar input {
+.tableSearch__searchbar input {
   width: 100%;
-  height: 30px;
+  height: 50px;
   border-radius: 4px;
   border: 1px solid #696e79;
   background: white;
 }
 
-.tableSearch-main__searchbar button {
+.tableSearch__searchbar button {
   border: 1px solid #696e79;
   background: white;
   border-radius: 4px;
+  height: 55px;
+}
+
+.tableSearch-icon {
+  padding-top: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.dropzone {
+  border: 1px dotted #696e79;
+  list-style: none;
+  cursor: pointer;
+}
+
+.dropzone .dropzone__container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropzone .dropzone__container:hover {
+  color: red;
+}
+
+.dropzone:hover {
+  border: 2px solid blue;
+}
+
+.gridView__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.gridView__main .gridView__Contents {
+  width: 25%;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.gridView__main .gridView__title {
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+
+.gridView__main .gridView__body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  padding-top: 20px;
 }
 /*# sourceMappingURL=component.css.map */
